@@ -2,13 +2,13 @@ import java.util.Scanner;
 import java.util.*;
 
 public class Student extends Person{
-    private int grade;
+    private double grade;
     public static List<Student> studentList = new ArrayList<>();
 
-    public void setGrade(int grade){
+    public void setGrade(double grade){
         this.grade = grade;
     }
-    public int getGrade(){
+    public double getGrade(){
         return grade;
     }
 
@@ -39,8 +39,8 @@ public class Student extends Person{
         running = true;
         while(running) {
             System.out.print("Student Grade: ");
-            if(in.hasNextInt()) {
-                student.setGrade(in.nextInt());
+            if(in.hasNextDouble()) {
+                student.setGrade(in.nextDouble());
                 running = false;
             }
             else {

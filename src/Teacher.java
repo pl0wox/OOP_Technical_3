@@ -1,14 +1,14 @@
 import java.util.*;
 
 public class Teacher extends Person {
-    private int salary;
+    private double salary;
     public static List<Teacher> teacherList = new ArrayList<>();
 
-    public int getSalary() {
+    public double getSalary() {
         return salary;
     }
 
-    public void setSalary(int salary) {
+    public void setSalary(double salary) {
         this.salary = salary;
     }
 
@@ -39,8 +39,8 @@ public class Teacher extends Person {
         running = true;
         while(running) {
             System.out.print("Teacher Salary: ");
-            if(in.hasNextInt()) {
-                teacher.setSalary(in.nextInt());
+            if(in.hasNextDouble()) {
+                teacher.setSalary(in.nextDouble());
                 running = false;
             }
             else {
